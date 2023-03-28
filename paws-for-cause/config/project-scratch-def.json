@@ -1,0 +1,29 @@
+{
+  "orgName": "Paws for Cause",
+  "edition": "Developer",
+  "features": [
+    "EnableSetPasswordInApi",
+    "Communities",
+    "PersonAccounts",
+    "ServiceCloud",
+    "AuthorApex"
+  ],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "nameSettings": {
+      "enableMiddleName": true,
+      "enableNameSuffix": true
+    }
+  }
+}

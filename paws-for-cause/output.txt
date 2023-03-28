@@ -1,0 +1,425 @@
+2023-03-28T04:39:34.407Z config reading core plugin /usr/local/lib/sfdx
+2023-03-28T04:39:34.408Z config loadJSON /usr/local/lib/sfdx/package.json
+2023-03-28T04:39:34.411Z config loadJSON /usr/local/lib/sfdx/oclif.manifest.json
+2023-03-28T04:39:34.412Z config:sfdx-cli using manifest from /usr/local/lib/sfdx/oclif.manifest.json
+2023-03-28T04:39:34.420Z config reading user plugins pjson /Users/mweichert/.local/share/sfdx/package.json
+2023-03-28T04:39:34.420Z config loadJSON /Users/mweichert/.local/share/sfdx/package.json
+2023-03-28T04:39:34.422Z config loading plugins [
+  '@oclif/plugin-command-snapshot',
+  '@salesforce/plugin-release-management'
+]
+2023-03-28T04:39:34.424Z config loadJSON /usr/local/lib/sfdx/package.json
+2023-03-28T04:39:34.424Z config loadJSON /usr/local/lib/sfdx/package.json
+2023-03-28T04:39:34.424Z config loadJSON /usr/local/lib/package.json
+2023-03-28T04:39:34.424Z config loadJSON /usr/local/lib/package.json
+2023-03-28T04:39:34.424Z config loadJSON /usr/local/package.json
+2023-03-28T04:39:34.424Z config loadJSON /usr/local/package.json
+2023-03-28T04:39:34.425Z config loadJSON /usr/package.json
+2023-03-28T04:39:34.425Z config loadJSON /usr/package.json
+2023-03-28T04:39:34.425Z config loadJSON /package.json
+2023-03-28T04:39:34.425Z config loadJSON /package.json
+(node:72814) Error Plugin: sfdx-cli: could not find package.json with {
+  type: 'dev',
+  root: '/usr/local/lib/sfdx',
+  name: '@oclif/plugin-command-snapshot'
+}
+module: @oclif/core@2.6.4
+task: loadPlugins
+plugin: sfdx-cli
+root: /usr/local/lib/sfdx
+See more details with DEBUG=*
+(Use `node --trace-warnings ...` to show where the warning was created)
+Error Plugin: sfdx-cli: could not find package.json with {
+  type: 'dev',
+  root: '/usr/local/lib/sfdx',
+  name: '@oclif/plugin-command-snapshot'
+}
+    at Plugin.load (/usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/plugin.js:108:19)
+    at async /usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/config.js:511:17
+    at async Promise.all (index 0)
+    at async Config.loadPlugins (/usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/config.js:498:9)
+    at async Config.loadDevPlugins (/usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/config.js:179:21)
+    at async Config.loadPluginsAndCommands (/usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/config.js:158:9)
+    at async Config.load (/usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/config.js:145:9)
+    at async Object.run (/usr/local/lib/sfdx/dist/cli.js:105:13)
+module: @oclif/core@2.6.4
+task: loadPlugins
+plugin: sfdx-cli
+root: /usr/local/lib/sfdx
+See more details with DEBUG=*
+2023-03-28T04:39:34.426Z config loading plugins [
+  '@oclif/plugin-autocomplete',
+  '@oclif/plugin-commands',
+  '@oclif/plugin-help',
+  '@oclif/plugin-version',
+  '@oclif/plugin-not-found',
+  '@oclif/plugin-plugins',
+  '@oclif/plugin-search',
+  '@oclif/plugin-update',
+  '@oclif/plugin-warn-if-update-available',
+  '@oclif/plugin-which',
+  '@salesforce/plugin-apex',
+  '@salesforce/plugin-auth',
+  '@salesforce/plugin-community',
+  '@salesforce/plugin-custom-metadata',
+  '@salesforce/plugin-data',
+  '@salesforce/plugin-info',
+  '@salesforce/plugin-limits',
+  '@salesforce/plugin-org',
+  '@salesforce/plugin-packaging',
+  '@salesforce/plugin-settings',
+  '@salesforce/plugin-signups',
+  '@salesforce/plugin-source',
+  '@salesforce/plugin-schema',
+  '@salesforce/plugin-telemetry',
+  '@salesforce/plugin-templates',
+  '@salesforce/plugin-trust',
+  '@salesforce/plugin-user',
+  '@salesforce/sfdx-plugin-lwc-test'
+]
+2023-03-28T04:39:34.435Z config reading core plugin /usr/local/lib/sfdx/node_modules/@oclif/plugin-autocomplete
+2023-03-28T04:39:34.435Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-autocomplete/package.json
+2023-03-28T04:39:34.435Z config reading core plugin /usr/local/lib/sfdx/node_modules/@oclif/plugin-commands
+2023-03-28T04:39:34.435Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-commands/package.json
+2023-03-28T04:39:34.435Z config reading core plugin /usr/local/lib/sfdx/node_modules/@oclif/plugin-update
+2023-03-28T04:39:34.435Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-update/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-community
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-community/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-custom-metadata
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-custom-metadata/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-telemetry
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-telemetry/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@oclif/plugin-help
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-help/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@oclif/plugin-version
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-version/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@oclif/plugin-not-found
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-not-found/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@oclif/plugin-plugins
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-plugins/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@oclif/plugin-search
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-search/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@oclif/plugin-warn-if-update-available
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-warn-if-update-available/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@oclif/plugin-which
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-which/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-apex
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-apex/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-auth
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-auth/package.json
+2023-03-28T04:39:34.436Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-data
+2023-03-28T04:39:34.436Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-data/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-info
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-info/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-limits
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-limits/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-org
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-org/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-packaging
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-packaging/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-settings
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-settings/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-signups
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-signups/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-source
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-source/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-schema
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-schema/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-templates
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-templates/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-trust
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-trust/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/plugin-user
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-user/package.json
+2023-03-28T04:39:34.437Z config reading core plugin /usr/local/lib/sfdx/node_modules/@salesforce/sfdx-plugin-lwc-test
+2023-03-28T04:39:34.437Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/sfdx-plugin-lwc-test/package.json
+(node:72814) Error Plugin: sfdx-cli: could not find package.json with {
+  type: 'dev',
+  root: '/usr/local/lib/sfdx',
+  name: '@salesforce/plugin-release-management'
+}
+module: @oclif/core@2.6.4
+task: loadPlugins
+plugin: sfdx-cli
+root: /usr/local/lib/sfdx
+See more details with DEBUG=*
+Error Plugin: sfdx-cli: could not find package.json with {
+  type: 'dev',
+  root: '/usr/local/lib/sfdx',
+  name: '@salesforce/plugin-release-management'
+}
+    at Plugin.load (/usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/plugin.js:108:19)
+    at async /usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/config.js:511:17
+    at async Promise.all (index 1)
+    at async Config.loadPlugins (/usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/config.js:498:9)
+    at async Config.loadDevPlugins (/usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/config.js:179:21)
+    at async Config.loadPluginsAndCommands (/usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/config.js:158:9)
+    at async Config.load (/usr/local/lib/sfdx/node_modules/@oclif/core/lib/config/config.js:145:9)
+    at async Object.run (/usr/local/lib/sfdx/dist/cli.js:105:13)
+module: @oclif/core@2.6.4
+task: loadPlugins
+plugin: sfdx-cli
+root: /usr/local/lib/sfdx
+See more details with DEBUG=*
+2023-03-28T04:39:34.438Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-autocomplete/oclif.manifest.json
+2023-03-28T04:39:34.438Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-update/oclif.manifest.json
+2023-03-28T04:39:34.438Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-commands/oclif.manifest.json
+2023-03-28T04:39:34.438Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-community/oclif.manifest.json
+2023-03-28T04:39:34.439Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-telemetry/oclif.manifest.json
+2023-03-28T04:39:34.439Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-custom-metadata/oclif.manifest.json
+2023-03-28T04:39:34.439Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-help/oclif.manifest.json
+2023-03-28T04:39:34.439Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-version/oclif.manifest.json
+2023-03-28T04:39:34.439Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-not-found/oclif.manifest.json
+2023-03-28T04:39:34.439Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-plugins/oclif.manifest.json
+2023-03-28T04:39:34.439Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-search/oclif.manifest.json
+2023-03-28T04:39:34.439Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-warn-if-update-available/oclif.manifest.json
+2023-03-28T04:39:34.439Z config loadJSON /usr/local/lib/sfdx/node_modules/@oclif/plugin-which/oclif.manifest.json
+2023-03-28T04:39:34.440Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-apex/oclif.manifest.json
+2023-03-28T04:39:34.440Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-auth/oclif.manifest.json
+2023-03-28T04:39:34.440Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-data/oclif.manifest.json
+2023-03-28T04:39:34.440Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-info/oclif.manifest.json
+2023-03-28T04:39:34.440Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-limits/oclif.manifest.json
+2023-03-28T04:39:34.440Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-org/oclif.manifest.json
+2023-03-28T04:39:34.440Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-packaging/oclif.manifest.json
+2023-03-28T04:39:34.440Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-settings/oclif.manifest.json
+2023-03-28T04:39:34.441Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-source/oclif.manifest.json
+2023-03-28T04:39:34.441Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-schema/oclif.manifest.json
+2023-03-28T04:39:34.441Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-signups/oclif.manifest.json
+2023-03-28T04:39:34.441Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-templates/oclif.manifest.json
+2023-03-28T04:39:34.441Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-trust/oclif.manifest.json
+2023-03-28T04:39:34.441Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/plugin-user/oclif.manifest.json
+2023-03-28T04:39:34.441Z config loadJSON /usr/local/lib/sfdx/node_modules/@salesforce/sfdx-plugin-lwc-test/oclif.manifest.json
+2023-03-28T04:39:34.442Z config:@oclif/plugin-autocomplete using manifest from /usr/local/lib/sfdx/node_modules/@oclif/plugin-autocomplete/oclif.manifest.json
+2023-03-28T04:39:34.442Z config:@oclif/plugin-update using manifest from /usr/local/lib/sfdx/node_modules/@oclif/plugin-update/oclif.manifest.json
+2023-03-28T04:39:34.442Z config:@oclif/plugin-commands using manifest from /usr/local/lib/sfdx/node_modules/@oclif/plugin-commands/oclif.manifest.json
+2023-03-28T04:39:34.442Z config:@salesforce/plugin-community using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-community/oclif.manifest.json
+2023-03-28T04:39:34.443Z config:@salesforce/plugin-telemetry using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-telemetry/oclif.manifest.json
+2023-03-28T04:39:34.443Z config:@salesforce/plugin-custom-metadata using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-custom-metadata/oclif.manifest.json
+2023-03-28T04:39:34.443Z config:@oclif/plugin-help using manifest from /usr/local/lib/sfdx/node_modules/@oclif/plugin-help/oclif.manifest.json
+2023-03-28T04:39:34.443Z config:@oclif/plugin-version using manifest from /usr/local/lib/sfdx/node_modules/@oclif/plugin-version/oclif.manifest.json
+2023-03-28T04:39:34.443Z config:@oclif/plugin-not-found using manifest from /usr/local/lib/sfdx/node_modules/@oclif/plugin-not-found/oclif.manifest.json
+2023-03-28T04:39:34.443Z config:@oclif/plugin-plugins using manifest from /usr/local/lib/sfdx/node_modules/@oclif/plugin-plugins/oclif.manifest.json
+2023-03-28T04:39:34.443Z config:@oclif/plugin-search using manifest from /usr/local/lib/sfdx/node_modules/@oclif/plugin-search/oclif.manifest.json
+2023-03-28T04:39:34.443Z config:@oclif/plugin-warn-if-update-available using manifest from /usr/local/lib/sfdx/node_modules/@oclif/plugin-warn-if-update-available/oclif.manifest.json
+2023-03-28T04:39:34.444Z config:@oclif/plugin-which using manifest from /usr/local/lib/sfdx/node_modules/@oclif/plugin-which/oclif.manifest.json
+2023-03-28T04:39:34.444Z config:@salesforce/plugin-apex using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-apex/oclif.manifest.json
+2023-03-28T04:39:34.444Z config:@salesforce/plugin-auth using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-auth/oclif.manifest.json
+2023-03-28T04:39:34.444Z config:@salesforce/plugin-info using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-info/oclif.manifest.json
+2023-03-28T04:39:34.445Z config:@salesforce/plugin-data using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-data/oclif.manifest.json
+2023-03-28T04:39:34.445Z config:@salesforce/plugin-limits using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-limits/oclif.manifest.json
+2023-03-28T04:39:34.445Z config:@salesforce/plugin-org using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-org/oclif.manifest.json
+2023-03-28T04:39:34.446Z config:@salesforce/plugin-settings using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-settings/oclif.manifest.json
+2023-03-28T04:39:34.447Z config:@salesforce/plugin-packaging using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-packaging/oclif.manifest.json
+2023-03-28T04:39:34.447Z config:@salesforce/plugin-schema using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-schema/oclif.manifest.json
+2023-03-28T04:39:34.447Z config:@salesforce/plugin-signups using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-signups/oclif.manifest.json
+2023-03-28T04:39:34.447Z config:@salesforce/plugin-trust using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-trust/oclif.manifest.json
+2023-03-28T04:39:34.448Z config:@salesforce/plugin-templates using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-templates/oclif.manifest.json
+2023-03-28T04:39:34.449Z config:@salesforce/plugin-source using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-source/oclif.manifest.json
+2023-03-28T04:39:34.449Z config:@salesforce/plugin-user using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/plugin-user/oclif.manifest.json
+2023-03-28T04:39:34.449Z config:@salesforce/sfdx-plugin-lwc-test using manifest from /usr/local/lib/sfdx/node_modules/@salesforce/sfdx-plugin-lwc-test/oclif.manifest.json
+2023-03-28T04:39:34.481Z config config done
+2023-03-28T04:39:34.482Z sfdx                        OS:
+2023-03-28T04:39:34.482Z sfdx                  platform: darwin
+2023-03-28T04:39:34.482Z sfdx              architecture: x64
+2023-03-28T04:39:34.482Z sfdx                   release: 20.4.0
+2023-03-28T04:39:34.482Z sfdx                     shell: zsh
+2023-03-28T04:39:34.482Z sfdx                      NODE:
+2023-03-28T04:39:34.482Z sfdx                   version: 18.14.2
+2023-03-28T04:39:34.482Z sfdx                       CLI:
+2023-03-28T04:39:34.482Z sfdx                   version: 7.193.2
+2023-03-28T04:39:34.482Z sfdx                   channel: stable
+2023-03-28T04:39:34.482Z sfdx                       bin: sfdx
+2023-03-28T04:39:34.482Z sfdx                      data: /Users/mweichert/.local/share/sfdx
+2023-03-28T04:39:34.482Z sfdx                     cache: /Users/mweichert/Library/Caches/sfdx
+2023-03-28T04:39:34.482Z sfdx                    config: /Users/mweichert/.config/sfdx
+2023-03-28T04:39:34.482Z sfdx                       ENV:
+2023-03-28T04:39:34.482Z sfdx              NODE_OPTIONS: <not set>
+2023-03-28T04:39:34.482Z sfdx   SFDX_AUTOUPDATE_DISABLE: true
+2023-03-28T04:39:34.482Z sfdx              SFDX_BINPATH: /usr/local/lib/sfdx/bin/sfdx
+2023-03-28T04:39:34.482Z sfdx        SFDX_COMPILE_CACHE: <not set>
+2023-03-28T04:39:34.482Z sfdx   SFDX_DISABLE_AUTOUPDATE: true
+2023-03-28T04:39:34.482Z sfdx                  SFDX_ENV: development
+2023-03-28T04:39:34.482Z sfdx            SFDX_INSTALLER: <not set>
+2023-03-28T04:39:34.482Z sfdx         SFDX_NPM_REGISTRY: <not set>
+2023-03-28T04:39:34.482Z sfdx           SFDX_REDIRECTED: <not set>
+2023-03-28T04:39:34.482Z sfdx              SFDX_S3_HOST: <not set>
+2023-03-28T04:39:34.482Z sfdx  SFDX_UPDATE_INSTRUCTIONS: Use "npm update --global sfdx-cli" to update npm-based installations.
+2023-03-28T04:39:34.482Z sfdx                      ARGS:
+2023-03-28T04:39:34.482Z sfdx                         0: /usr/local/lib/sfdx/bin/node
+2023-03-28T04:39:34.482Z sfdx                         1: /usr/local/lib/sfdx/bin/run
+2023-03-28T04:39:34.482Z sfdx                         2: package
+2023-03-28T04:39:34.482Z sfdx                         3: version
+2023-03-28T04:39:34.482Z sfdx                         4: create
+2023-03-28T04:39:34.482Z sfdx                         5: --package
+2023-03-28T04:39:34.482Z sfdx                         6: PawsForCause
+2023-03-28T04:39:34.482Z sfdx                         7: --installation-key
+2023-03-28T04:39:34.482Z sfdx                         8: test123
+2023-03-28T04:39:34.482Z sfdx                         9: --verbose
+2023-03-28T04:39:34.483Z config start init hook
+2023-03-28T04:39:35.039Z sf:core TRACE Setup child 'plugin-info:init_doctor' logger instance
+2023-03-28T04:39:35.041Z sf:core TRACE Setup child 'plugin-settings:load_config_meta' logger instance
+2023-03-28T04:39:35.041Z sfdx:@oclif/plugin-update:hooks:init start (require) /usr/local/lib/sfdx/node_modules/@oclif/plugin-update/lib/hooks/init.js
+2023-03-28T04:39:35.041Z sfdx:@oclif/plugin-warn-if-update-available:hooks:init start (require) /usr/local/lib/sfdx/node_modules/@oclif/plugin-warn-if-update-available/lib/hooks/init/check-update.js
+2023-03-28T04:39:35.042Z sfdx:@salesforce/plugin-info:hooks:init start (require) /usr/local/lib/sfdx/node_modules/@salesforce/plugin-info/lib/hooks/init/init_doctor.js
+2023-03-28T04:39:35.042Z sf:plugin-info:init_doctor DEBUG init_doctor hook
+2023-03-28T04:39:35.042Z sfdx:@salesforce/plugin-settings:hooks:init start (require) /usr/local/lib/sfdx/node_modules/@salesforce/plugin-settings/lib/hooks/init/load_config_meta.js
+2023-03-28T04:39:35.043Z sf:plugin-settings:load_config_meta INFO No config meta found for sfdx-cli
+2023-03-28T04:39:35.043Z sf:plugin-settings:load_config_meta INFO No config meta found for @oclif/plugin-autocomplete
+2023-03-28T04:39:35.043Z sf:plugin-settings:load_config_meta INFO No config meta found for @oclif/plugin-update
+2023-03-28T04:39:35.043Z sf:plugin-settings:load_config_meta INFO No config meta found for @oclif/plugin-commands
+2023-03-28T04:39:35.043Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-community
+2023-03-28T04:39:35.043Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-telemetry
+2023-03-28T04:39:35.043Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-custom-metadata
+2023-03-28T04:39:35.043Z sf:plugin-settings:load_config_meta INFO No config meta found for @oclif/plugin-help
+2023-03-28T04:39:35.043Z sf:plugin-settings:load_config_meta INFO No config meta found for @oclif/plugin-version
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @oclif/plugin-not-found
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @oclif/plugin-plugins
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @oclif/plugin-search
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @oclif/plugin-warn-if-update-available
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @oclif/plugin-which
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-apex
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-auth
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-info
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-data
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-limits
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-org
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-settings
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-packaging
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-schema
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-signups
+2023-03-28T04:39:35.044Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-trust
+2023-03-28T04:39:35.045Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-templates
+2023-03-28T04:39:35.045Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-source
+2023-03-28T04:39:35.045Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/plugin-user
+2023-03-28T04:39:35.045Z sf:plugin-settings:load_config_meta INFO No config meta found for @salesforce/sfdx-plugin-lwc-test
+2023-03-28T04:39:35.045Z sfdx:@oclif/plugin-update:hooks:init done
+2023-03-28T04:39:35.045Z sfdx:@salesforce/plugin-settings:hooks:init done
+2023-03-28T04:39:35.045Z sfdx:@salesforce/plugin-info:hooks:init done
+2023-03-28T04:39:35.046Z sfdx:@oclif/plugin-warn-if-update-available:hooks:init done
+2023-03-28T04:39:35.046Z config init hook done
+2023-03-28T04:39:35.046Z config runCommand package:version:create [ '--package', 'PawsForCause', '--installation-key', 'test123', '--verbose' ]
+2023-03-28T04:39:35.364Z config:@salesforce/plugin-packaging (require) /usr/local/lib/sfdx/node_modules/@salesforce/plugin-packaging/lib/commands/package/version/create.js
+2023-03-28T04:39:35.364Z config start prerun hook
+2023-03-28T04:39:35.401Z sfdx:@salesforce/plugin-telemetry:hooks:prerun start (require) /usr/local/lib/sfdx/node_modules/@salesforce/plugin-telemetry/lib/hooks/telemetryPrerun.js
+2023-03-28T04:39:35.402Z sf:core TRACE Setup child 'Config' logger instance
+2023-03-28T04:39:35.402Z sf:core TRACE Setup child 'Config' logger instance
+2023-03-28T04:39:35.402Z sf:Config INFO Reading config file: /Users/mweichert/.sf/config.json
+2023-03-28T04:39:35.405Z sf:Config INFO Reading config file: /Users/mweichert/Projects/salesforce-dev-getting-started/paws-for-cause/.sf/config.json
+2023-03-28T04:39:35.409Z sf:Config INFO Reading config file: /Users/mweichert/.sf/config.json
+2023-03-28T04:39:35.410Z sf:Config INFO Reading config file: /Users/mweichert/Projects/salesforce-dev-getting-started/paws-for-cause/.sf/config.json
+2023-03-28T04:39:35.413Z sf:core TRACE Setup child 'core:config' logger instance
+2023-03-28T04:39:35.417Z sfdx:telemetry@2.1.3 Usage acknowledgement file already exists
+2023-03-28T04:39:35.417Z sfdx:telemetry@2.1.3 Using telemetry logging file /var/folders/1f/2pwgvbc93sq3br65b6bfsd_40000gn/T/sfdx-telemetry/telemetry-ab6a8f6d0d0ef31c4d190ebcdf088e82cc4e5454.log
+2023-03-28T04:39:35.418Z sf:core TRACE Setup child 'Config' logger instance
+2023-03-28T04:39:35.418Z sf:core TRACE Setup child 'Config' logger instance
+2023-03-28T04:39:35.419Z sf:Config INFO Reading config file: /Users/mweichert/.sf/config.json
+2023-03-28T04:39:35.419Z sf:Config INFO Reading config file: /Users/mweichert/Projects/salesforce-dev-getting-started/paws-for-cause/.sf/config.json
+2023-03-28T04:39:35.425Z sf:core TRACE Setup child 'OrgAccessor' logger instance
+2023-03-28T04:39:35.426Z sf:core TRACE Setup child 'SandboxAccessor' logger instance
+2023-03-28T04:39:35.426Z sf:core TRACE Setup child 'AliasesConfig' logger instance
+2023-03-28T04:39:35.426Z sf:AliasesConfig INFO Reading config file: /Users/mweichert/.sfdx/alias.json
+2023-03-28T04:39:35.427Z sf:core TRACE Setup child 'TokensConfig' logger instance
+2023-03-28T04:39:35.427Z sf:core TRACE Setup child 'crypto' logger instance
+2023-03-28T04:39:35.427Z sf:crypto DEBUG retryStatus: undefined
+2023-03-28T04:39:35.428Z sf:core TRACE Setup child 'keyChain' logger instance
+2023-03-28T04:39:35.428Z sf:keyChain DEBUG platform: darwin
+2023-03-28T04:39:35.450Z sf:TokensConfig INFO Reading config file: /Users/mweichert/.sfdx/tokens.json
+2023-03-28T04:39:35.451Z sf:core TRACE Setup child 'Org' logger instance
+2023-03-28T04:39:35.451Z sf:core TRACE Setup child 'AuthInfoConfig' logger instance
+2023-03-28T04:39:35.452Z sf:core TRACE Setup child 'crypto' logger instance
+2023-03-28T04:39:35.452Z sf:crypto DEBUG retryStatus: undefined
+2023-03-28T04:39:35.452Z sf:core TRACE Setup child 'keyChain' logger instance
+2023-03-28T04:39:35.452Z sf:keyChain DEBUG platform: darwin
+2023-03-28T04:39:35.452Z sf:AuthInfoConfig INFO Reading config file: /Users/mweichert/.sfdx/m.weichert@gmail.com.json
+2023-03-28T04:39:35.454Z sf:core TRACE Setup child 'AuthInfo' logger instance
+2023-03-28T04:39:35.457Z sf:AuthInfo INFO Returning fields for a connection using OAuth config.
+2023-03-28T04:39:35.459Z sf:core TRACE Setup child 'connection' logger instance
+2023-03-28T04:39:35.464Z sf:connection DEBUG API version cache last checked on 3/27/2023, 9:14:53 PM (now is 3/28/2023, 12:39:35 AM)
+2023-03-28T04:39:35.464Z sf:connection DEBUG Using cached API version: 57.0
+2023-03-28T04:39:35.464Z sf:connection DEBUG Connection created with apiVersion 57.0
+2023-03-28T04:39:35.469Z sfdx:telemetry@2.1.3 Setting up process exit handler
+2023-03-28T04:39:35.469Z sfdx:@salesforce/plugin-telemetry:hooks:prerun done
+2023-03-28T04:39:35.469Z config prerun hook done
+2023-03-28T04:39:35.469Z sf:Config INFO Reading config file: /Users/mweichert/.sf/config.json
+2023-03-28T04:39:35.470Z sf:Config INFO Reading config file: /Users/mweichert/Projects/salesforce-dev-getting-started/paws-for-cause/.sf/config.json
+2023-03-28T04:39:35.473Z sf:core TRACE Setup child 'core:config' logger instance
+2023-03-28T04:39:35.473Z sf:core:config INFO Key org-metadata-rest-deploy already exists in allowedProperties, skipping.
+2023-03-28T04:39:35.473Z sfdx:Lifecycle 2 lifecycle events with the name update have now been registered. When this event is emitted all 2 listeners will fire.
+2023-03-28T04:39:35.473Z sfdx:Lifecycle 3 lifecycle events with the name update have now been registered. When this event is emitted all 3 listeners will fire.
+2023-03-28T04:39:35.473Z sfdx:Lifecycle 2 lifecycle events with the name init have now been registered. When this event is emitted all 2 listeners will fire.
+2023-03-28T04:39:35.473Z sfdx:package:version:create init version: @oclif/core@2.6.4 argv: [ '--package', 'PawsForCause', '--installation-key', 'test123', '--verbose' ]
+2023-03-28T04:39:35.477Z sf:core TRACE Setup child 'Org' logger instance
+2023-03-28T04:39:35.477Z sf:core TRACE Setup child 'AuthInfoConfig' logger instance
+2023-03-28T04:39:35.477Z sf:core TRACE Setup child 'crypto' logger instance
+2023-03-28T04:39:35.478Z sf:crypto DEBUG retryStatus: undefined
+2023-03-28T04:39:35.478Z sf:core TRACE Setup child 'keyChain' logger instance
+2023-03-28T04:39:35.478Z sf:keyChain DEBUG platform: darwin
+2023-03-28T04:39:35.478Z sf:AuthInfoConfig INFO Reading config file: /Users/mweichert/.sfdx/m.weichert@gmail.com.json
+2023-03-28T04:39:35.479Z sf:core TRACE Setup child 'AuthInfo' logger instance
+2023-03-28T04:39:35.482Z sf:AuthInfo INFO Returning fields for a connection using OAuth config.
+2023-03-28T04:39:35.482Z sf:core TRACE Setup child 'connection' logger instance
+2023-03-28T04:39:35.482Z sf:connection DEBUG API version cache last checked on 3/27/2023, 9:14:53 PM (now is 3/28/2023, 12:39:35 AM)
+2023-03-28T04:39:35.482Z sf:connection DEBUG Using cached API version: 57.0
+2023-03-28T04:39:35.482Z sf:connection DEBUG Connection created with apiVersion 57.0
+2023-03-28T04:39:35.486Z sf:core TRACE Setup child 'packageVersionCreate' logger instance
+2023-03-28T04:39:35.486Z sf:core TRACE Setup child 'SfProjectJson' logger instance
+2023-03-28T04:39:35.487Z sf:SfProjectJson INFO Reading config file: /Users/mweichert/Projects/salesforce-dev-getting-started/paws-for-cause/sfdx-project.json
+2023-03-28T04:39:35.491Z sf:connection DEBUG request: {"method":"GET","url":"https://michaelweichert-dev-ed.develop.my.salesforce.com/services/data/v57.0/tooling/sobjects/Package2/0Ho8Y000000blKCSAY","headers":{"content-type":"application/json","user-agent":"sfdx toolbelt:"}}
+2023-03-28T04:39:35.916Z sf:core TRACE Setup child 'SettingsGenerator' logger instance
+2023-03-28T04:39:35.917Z sf:core TRACE Setup child 'componentSetBuilder' logger instance
+2023-03-28T04:39:35.917Z sf:componentSetBuilder DEBUG Building ComponentSet from sourcepath: /Users/mweichert/Projects/salesforce-dev-getting-started/paws-for-cause/force-app
+2023-03-28T04:39:35.917Z sf:core TRACE Setup child 'ComponentSet' logger instance
+2023-03-28T04:39:35.922Z sf:componentSetBuilder DEBUG ComponentSet apiVersion = undefined
+2023-03-28T04:39:35.922Z sf:componentSetBuilder DEBUG ComponentSet sourceApiVersion = 57.0
+2023-03-28T04:39:35.923Z sf:core TRACE Setup child 'StandardWriter' logger instance
+2023-03-28T04:39:35.926Z sf:core TRACE Setup child 'ComponentSet' logger instance
+[1m[31mError (1):[39m[22m Component conversion failed: Cannot read properties of undefined (reading 'CustomField')
+2023-03-28T04:39:35.934Z perf Init Time: 1449.8525ms
+2023-03-28T04:39:35.934Z perf Config Load Time: 61.1994ms
+2023-03-28T04:39:35.934Z perf Command Load Time: 0.0000ms
+2023-03-28T04:39:35.934Z perf Execution Time: 1449.8548ms
+2023-03-28T04:39:35.934Z perf Core Plugin Load Time: 23.1841ms
+2023-03-28T04:39:35.934Z perf User Plugin Load Time: 0.0000ms
+2023-03-28T04:39:35.934Z perf Linked Plugin Load Time: 0.0000ms
+2023-03-28T04:39:35.934Z perf Plugin Load Times:
+2023-03-28T04:39:35.934Z perf   @oclif/plugin-command-snapshot: 1509.6626ms
+2023-03-28T04:39:35.934Z perf   @salesforce/plugin-release-management: 1509.2016ms
+2023-03-28T04:39:35.934Z perf   @salesforce/plugin-source: 16.4449ms
+2023-03-28T04:39:35.934Z perf   @oclif/plugin-help: 15.5927ms
+2023-03-28T04:39:35.934Z perf   @oclif/plugin-version: 15.4393ms
+2023-03-28T04:39:35.934Z perf   @oclif/plugin-autocomplete: 15.3144ms
+2023-03-28T04:39:35.934Z perf   @oclif/plugin-commands: 15.2486ms
+2023-03-28T04:39:35.934Z perf   @oclif/plugin-not-found: 15.2008ms
+2023-03-28T04:39:35.934Z perf   @salesforce/plugin-user: 15.1708ms
+2023-03-28T04:39:35.934Z perf   @oclif/plugin-plugins: 15.1153ms
+2023-03-28T04:39:35.934Z perf   @salesforce/sfdx-plugin-lwc-test: 15.0189ms
+2023-03-28T04:39:35.934Z perf   @salesforce/plugin-packaging: 15.0186ms
+2023-03-28T04:39:35.935Z perf   @oclif/plugin-search: 14.9600ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-signups: 14.8224ms
+2023-03-28T04:39:35.935Z perf   @oclif/plugin-warn-if-update-available: 14.5233ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-apex: 14.4342ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-auth: 14.4012ms
+2023-03-28T04:39:35.935Z perf   @oclif/plugin-which: 14.3661ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-templates: 14.1771ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-data: 14.1583ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-schema: 14.0365ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-org: 14.0226ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-limits: 13.7368ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-settings: 13.5862ms
+2023-03-28T04:39:35.935Z perf   @oclif/plugin-update: 13.5854ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-trust: 13.4395ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-info: 13.2904ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-community: 12.6079ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-custom-metadata: 12.5852ms
+2023-03-28T04:39:35.935Z perf   @salesforce/plugin-telemetry: 9.5759ms
+2023-03-28T04:39:35.935Z perf Hook Run Times:
+2023-03-28T04:39:35.935Z perf   init:
+2023-03-28T04:39:35.935Z perf     total: 562.5325ms
+2023-03-28T04:39:35.935Z perf     @oclif/plugin-update(./lib/hooks/init): 561.4111ms
+2023-03-28T04:39:35.935Z perf     @oclif/plugin-warn-if-update-available(./lib/hooks/init/check-update): 404.0745ms
+2023-03-28T04:39:35.935Z perf     @salesforce/plugin-info(./lib/hooks/init/init_doctor.js): 374.6373ms
+2023-03-28T04:39:35.935Z perf     @salesforce/plugin-settings(./lib/hooks/init/load_config_meta): 5.3792ms
+2023-03-28T04:39:35.935Z perf   prerun:
+2023-03-28T04:39:35.935Z perf     total: 104.9340ms
+2023-03-28T04:39:35.935Z perf     @salesforce/plugin-telemetry(./lib/hooks/telemetryPrerun.js): 104.7526ms
+2023-03-28T04:39:35.939Z sfdx:telemetry@2.1.3 Spawning "/usr/local/lib/sfdx/bin/node /usr/local/lib/sfdx/node_modules/@salesforce/plugin-telemetry/processes/upload /Users/mweichert/Library/Caches/sfdx /var/folders/1f/2pwgvbc93sq3br65b6bfsd_40000gn/T/sfdx-telemetry/telemetry-ab6a8f6d0d0ef31c4d190ebcdf088e82cc4e5454.log"
