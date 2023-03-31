@@ -15,8 +15,6 @@
 
 ## Introduction
 
-## Introduction
-
 Welcome to the Getting Started with Salesforce Development Tutorial! This is my very first tutorial about Salesforce Development, and it will help you set up a Salesforce Developer Edition account and get started with the Salesforce CLI to create a sandbox. The sandbox environment will allow you to experiment and develop your components without affecting your organization's live data.
 
 This tutorial is a prerequisite for my Salesforce NPSP Donation Management Tutorial.
