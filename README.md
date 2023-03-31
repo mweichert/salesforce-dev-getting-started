@@ -15,18 +15,20 @@
 
 ## Introduction
 
-Welcome to the Getting Started with Salesforce Development Tutorial! This is my very first tutorial about Salesforce Development, and it will help you set up a Salesforce Developer Edition account and get started with the Salesforce CLI to create a sandbox. The sandbox environment will allow you to experiment and develop your components without affecting your organization's live data.
+Welcome to the Getting Started with Salesforce Development Tutorial! This tutorial is designed to help you set up a Salesforce Developer Edition account and get started with the Salesforce CLI to create a sandbox. The sandbox environment will allow you to experiment and develop your components without affecting your organization's live data.
 
-This tutorial is a prerequisite for my Salesforce NPSP Donation Management Tutorial.
+In this tutorial, we will create a custom object and deploy it to our sandbox using Salesforce CLI. This custom object will help nonprofits manage and track their fundraising and engagement events.
 
-As part of this tutorial, we will install the Nonprofit Success Pack (NPSP) package, a set of pre-built Salesforce components tailored specifically for nonprofit organizations. This package will provide the foundation for our donation management system.
+### Objectives
+- Set up a Salesforce Developer Edition account
+- Enable Dev Hub
+- Install the Salesforce CLI
+- Create a sandbox
+- Create a custom object and deploy it to our sandbox using Salesforce CLI
 
-Additionally, we will create a custom object and deploy it to our sandbox using Salesforce CLI. This custom object will help nonprofits manage and track their fundraising and engagement events.
-
-**Prerequisites:**
+### Prerequisites
 - A basic understanding of what the Salesforce platform and CRM are.
-- A computer with a stable internet connection
-
+- A computer with a stable internet connection.
 
 ## Step 1: Sign Up for a Salesforce Developer Edition Account
 
