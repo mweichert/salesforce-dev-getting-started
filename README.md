@@ -189,7 +189,35 @@ To create a scratch org with the enabled features, follow these steps:
 sfdx org create scratch -a PawsAndCause -f config/project-scratch-def.json -t --set-default
 ```
 
-Once the above command finishes executing, you should have a new scratch org that we can work with and deploy to.
+4. Once the above command finishes executing, you should have a new scratch org that we can work with and deploy to. Each scratch org is associated with an e-mail address of the admin account and an org ID that you can see by running the following command, which lists all orgs that Salesforce CLI is aware of:
+
+```
+sfdx org list --all
+```
+
+This should output a table that includes something like the following:
+
+```
+Scratch orgs
+=================================================================================
+|   ALIAS USERNAME                      ORG ID             STATUS EXPIRATION DATE 
+| ─ ───── ───────────────────────────── ────────────────── ────── ─────────────── 
+|         test-l3svooq8gacs@example.com 00DDE0000045P442AE Active 2023-04-04    
+```
+
+5. We'll now need to get a password for that new admin account by running the following command, substituting the e-mail used in the example with the e-mail displayed in the table above for your scratch org:
+
+```
+sfdx force user password generate -u test-l3svooq8gacs@example.com
+```
+
+6. This should return a generated password that you can use when authenticating yourself when logging into your scratch org. You can now use the following command to display all important login information for your scratch admin account:
+
+```
+sfdx org display user --target-org test-l3svooq8gacs@example.com
+```
+
+Now that your scratch org is setup and ready to use, we can continue with the rest of the tutorial.
 
 ## Step 8: Create the Event Custom Object
 
@@ -328,15 +356,44 @@ Follow these steps to deploy the custom object:
 2. Execute the following command to create a package for our custom objects:
 
 ```
-sfdx package create --name PawsForCause --path force-app -e --package-type Unlocked    
+sfdx package create --package-type Unlocked --path force-app --name "Paws For Cause"
 ```
 
-3. Create a new package version to deploy by executing the following command:
+3. Take note of the package ID. Now create a new package version to deploy by executing the following command, replacing _0Ho8Y000000blKMSAY_ with the package ID returned from the command executed above:
 
 ```
-sfdx package create version --installation-key-bypass
+sfdx package version create --package "0Ho8Y000000blKMSAY" --installation-key-bypass
 ```
 
-4. Install our package in our PawsForCause scratch:
+4. Run the following command to get the ID of the package version you just created:
 
-_TODO_
+```
+sfdx package version list --package "Paws For Cause"
+```
+
+4. Install our package in our PawsForCause scratch, replacing _04t8Y000000pCNzQAM_ with the ID of the package version returned from the previous command, and too, replace _test-l3svooq8gacs@example.com_ with the email associated with your stratch org ([see Step 7: Create a Scratch Org with Enabled Features](#step-7-create-a-scratch-org-with-enabled-features)) :
+
+```
+sfdx package install --package "04t8Y000000pCNzQAM" --target-org test-l3svooq8gacs@example.com
+```
+
+This command installs the package in our scratch org. Once the installation is complete, we can verify that our custom Event object has been deployed by navigating to Setup > Object Manager in our scratch org.
+
+Congratulations! You have now created and deployed an Unlocked Package for your custom Event object. You can now share your package with other developers or install it in other orgs to reuse your customizations and metadata.
+
+## Conclusion
+
+Congratulations on completing this tutorial! By now, you should have a good understanding of how to:
+
+- Set up a Salesforce Developer Edition account
+- Enable Dev Hub
+- Install the Salesforce CLI
+- Create a sandbox
+- Deploy customizations to your sandbox using Unlocked Packages
+- We also created a custom object, the Event object, that will be used in a future tutorial about Salesforce NPSP. We learned about Unlocked Packages and how they can be used to bundle together and distribute customizations and metadata in a portable and reusable format.
+
+In addition, we enabled Source Tracking in our sandbox, which will help us track changes to our customizations and make it easier to migrate them to other orgs.
+
+You are now equipped with the basic skills and knowledge to start developing on the Salesforce platform. We encourage you to explore the Salesforce documentation and Trailhead modules to deepen your knowledge and skills.
+
+Thank you for following along with this tutorial, and happy developing!
